@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.o">
+        <meta charset="UTF-8">
+        <meta name="author" lang="es" content="Calderón Tinjaca Daniel David">
+        <meta name="keywords" content="Portafolio personal, Desarrollo web, Frontend">
+        <meta name="description" content="Bienvenidos a mi portafolio personal con todos mis proyectos personales y lenguajes en conocimiento, 
+        espero les guste.">
+        <meta name="copyright" content="Copyright Daniel David Calderón Tinjaca">  
+        <!--  Animaciones de entrada  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Animaciones al hacer scrooll -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Carga iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+        <link rel="shortcut icon" href="img/logo-portafolio.png" type="image/png" />
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Portafolio</title>
+    </head>
+    <body>
+        <header>
+            <a href="#inicio" class="logo">Portafolio</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="#inicio" onclick="toggleMenu();">Inicio</a></li>
+                <li><a href="#sobremi" onclick="toggleMenu();">Sobre mi</a></li>
+                <li><a href="#lenguajes" onclick="toggleMenu();">Lenguajes</a></li>
+                <li><a href="#proyectos" onclick="toggleMenu();">Proyectos</a></li>
+                <li><a href="#contacto" onclick="toggleMenu();">Contacto</a></li>
+            </ul>
+        </header>
+
+    <section class="sec-banner" id="inicio">
+        <div class="contenido-bn">
+                <h1 class="titulo animate__animated animate__zoomInDown">Portafolio</h1>
+                <span class="nombre animate__animated animate__zoomIn">Daniel David Calderón Tinjaca</span>
+                <a href="#proyectos"><button class="btn-banner  animate__animated animate__zoomInUp" type="button"><span class="cover"></span>Proyectos</button></a>
+        </div>
+    </section>
+    <hr id="ent">
+
+    <!-- ************************************** SECCION SOMBRE MI **************************************  -->
+
+    <section class="sec-sobremi" id="sobremi">
+        <div class="cont-titulo">
+            <h2 class="titulos">Sobre mi</h2>
+        </div>
+        <div class="contenedor-sbm">
+
+            <div class="cont-carta-sbm" data-aos="fade-up">
+                <div class="carta-sbm">
+                    <img src="img/foto.jpg" alt="foto" class="foto">
+                    <div class="contenido-sobremi">
+                        <h3 class="nombre-sbm">Daniel David Calderón Tinjaca</h3>
+                        <span class="prof">Desarrollador Web Front-end.</span>
+                        <p>Este Portafolio / Pagina Web es una forma de demostrar los conocimientos que tengo y que e aprendido / adquirido a lo 
+                            largo de mi corta e inicida carrera como <strong><mark>Desarrollador Web Front-end Jr</mark></strong>, esto es algo que desde el primer
+                            momento que conocí supe que esto sería lo que me apasionaria. <br>
+                            Actualmente sigo adquiriendo nuevos conocimientos.</p>
+        
+                        <div class="wrapper">
+                            <div class="icon facebook" >
+                                <a href="https://www.facebook.com/profile.php?id=100061123026138" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a>
+                            </div>
+                            <div class="icon whatsapp">
+                                <a href="https://wa.me/573213461519" target="_blank"><span><i class="fab fa-whatsapp"></i></span></a>
+                            </div>
+                            <div class="icon instagram">
+                                <a href="https://www.instagram.com/daniel.callderon_/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+                            </div>
+                            <div class="icon twitter">
+                                <a href="https://twitter.com/danieldacati1" target="_blank"><span><i class="fab fa-twitter"></i></span></a>
+                            </div><!--
+                            <div class="icon github">
+                                <a href="" target="_blank"><span><i class="fab fa-github"></i></span></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr id="ent">
+
+    <!-- ************************************** SECCION LENGUAJES **************************************  -->
+
+    <section class="lenguajes" id="lenguajes">
+        <div class="cont-titulo">
+            <h2 class="titulos">Lenguajes</h2>
+        </div>
+        <div class="parrafos">
+            <p>Estos son los diferentes lenguajes de programación y Frameworks que manejo actualmente</p>
+        </div>
+        
+        <!-- ++++++++++++++++++++++++++++++++++ CAJA 1 ++++++++++++++++++++++++++++++++++  -->
+
+        <div class="contenido-lng" data-aos="fade-up" data-aos-duration="800">
+            <div class="lenguajesbx html">
+                <img src="img/icon-html-5.png" alt="Html5">
+                <h2>HTML 5</h2>
+                <a id="myBtn1"><button class="btn-lng" type="button"><span class="cover"></span>Saber más</button></a>
+            </div>
+        </div>            
+            <!-- The Modal -->       
+            <div id="myModal1" class="modal"> 
+                <!-- Modal content -->
+                <div class="contenido-modal">
+                    <span class="close1">&times;</span></br>
+                    <h2>¿QUE ES HTML?</h2>
+                    <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web 
+                    y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos</p>
+                </div>
+            </div>
+        
+        <!-- ++++++++++++++++++++++++++++++++++ CAJA 2 ++++++++++++++++++++++++++++++++++  -->
+
+        <div class="contenido-lng" data-aos="fade-up" data-aos-duration="1000">
+            <div class="lenguajesbx css">
+                <img src="img/icon-css-3.png" alt="css3">
+                <h2>CSS 3</h2>
+                <a id="myBtn2"><button class="btn-lng" type="button"><span class="cover"></span>Saber más</button></a>
+            </div>
+        </div>            
+            <!-- The Modal -->       
+            <div id="myModal2" class="modal"> 
+                <!-- Modal content -->
+                <div class="contenido-modal">
+                    <span class="close2">&times;</span></br>
+                    <h2>¿QUE ES CSS?</h2>
+                    <p>CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y 
+                    estructuración de páginas web (HTML o XML). Este lenguaje contiene elementos de codificación y se compone de estas 
+                    “Cascading Style Sheets” que también se llaman archivos CSS </p>
+                </div>
+            </div>
+        
+        <!-- ++++++++++++++++++++++++++++++++++ CAJA 3 ++++++++++++++++++++++++++++++++++  -->
+
+        <div class="contenido-lng" data-aos="fade-up" data-aos-duration="1200">
+            <div class="lenguajesbx javascript">
+                <img src="img/icon-javascript.png" alt="javascript">
+                <h2>JAVASCRIPT</h2>
+                <a id="myBtn3"><button class="btn-lng" type="button"><span class="cover"></span>Saber más</button></a>
+            </div>
+        </div>            
+            <!-- The Modal -->       
+            <div id="myModal3" class="modal"> 
+                <!-- Modal content -->
+                <div class="contenido-modal">
+                    <span class="close3">&times;</span></br>
+                    <h2>¿QUE ES JAVASCRIPT?</h2>
+                    <p>JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. 
+                    Desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones de JavaScript 
+                    pueden mejorar la experiencia del usuario de un sitio web.</p>
+                </div>
+            </div>
+        
+        <!-- ++++++++++++++++++++++++++++++++++ CAJA 4 ++++++++++++++++++++++++++++++++++  -->
+
+        <div class="contenido-lng" data-aos="fade-up" data-aos-duration="1000">
+            <div class="lenguajesbx php">
+                <img src="img/icon-php.png" alt="php">
+                <h2>PHP</h2>
+                <a id="myBtn4"><button class="btn-lng" type="button"><span class="cover"></span>Saber más</button></a>
+            </div>
+        </div>            
+            <!-- The Modal -->       
+            <div id="myModal4" class="modal"> 
+                <!-- Modal content -->
+                <div class="contenido-modal">
+                    <span class="close4">&times;</span></br>
+                    <h2>¿QUE ES PHP?</h2>
+                    <p>PHP es un lenguaje de programación destinado a desarrollar aplicaciones para la web y crear páginas web, 
+                    avoreciendo la conexión entre los servidores y la interfaz de usuario.</p>
+                </div>
+            </div>
+        
+        <!-- ++++++++++++++++++++++++++++++++++ CAJA 5 ++++++++++++++++++++++++++++++++++  -->
+
+        <div class="contenido-lng" data-aos="fade-up" data-aos-duration="800">
+            <div class="lenguajesbx mysql">
+                <img src="img/icon-mysql.png" alt="mysql">
+                <h2>MYSQL</h2>
+                <a id="myBtn5"><button class="btn-lng" type="button"><span class="cover"></span>Saber más</button></a>
+            </div>
+        </div>            
+            <!-- The Modal -->       
+            <div id="myModal5" class="modal"> 
+                <!-- Modal content -->
+                <div class="contenido-modal">
+                    <span class="close5">&times;</span></br>
+                    <h2>¿QUE ES MYSQL?</h2>
+                    <p>MySQL es un sistema de gestión de bases de datos relacionales (RDBMS) de código abierto respaldado por Oracle 
+                    y basado en el lenguaje de consulta estructurado (SQL).</p>
+                </div>
+            </div>
+        
+        <!-- ++++++++++++++++++++++++++++++++++ CAJA 6 ++++++++++++++++++++++++++++++++++  -->
+
+        <div class="contenido-lng" data-aos="fade-up" data-aos-duration="800">
+            <div class="lenguajesbx bootstrap">
+                <img src="img/icon-bootstrap.png" alt="bootstrap">
+                <h2>BOOTSTRAP</h2>
+                <a id="myBtn6"><button class="btn-lng" type="button"><span class="cover"></span>Saber más</button></a>
+            </div>
+        </div>            
+            <!-- The Modal -->       
+            <div id="myModal6" class="modal"> 
+                <!-- Modal content -->
+                <div class="contenido-modal">
+                    <span class="close6">&times;</span></br>
+                    <h2>¿QUE ES BOOTSTRAP?</h2>
+                    <p>Bootstrap es un framework CSS y Javascript diseñado para la creación de interfaces limpias y con un diseño responsive. 
+                    Además, ofrece un amplio abanico de herramientas y funciones, de manera que los usuarios pueden crear prácticamente cualquier 
+                    tipo de sitio web haciendo uso de los mismos.</p>
+                </div>
+            </div>
+        
+            <!-- ++++++++++++++++++++++++++++++++++ CAJA 7 ++++++++++++++++++++++++++++++++++  -->
+
+        <div class="contenido-lng" data-aos="fade-up" data-aos-duration="800">
+            <div class="lenguajesbx git">
+                <img src="img/icon-git.png" alt="git">
+                <h2>GIT</h2>
+            <a id="myBtn7"><button class="btn-lng" type="button"><span class="cover"></span>Saber más</button></a>
+            </div>
+        </div>            
+            <!-- The Modal -->       
+            <div id="myModal7" class="modal"> 
+                <!-- Modal content -->
+                <div class="contenido-modal">
+                    <span class="close7">&times;</span></br>
+                    <h2>¿QUE ES GIT?</h2>
+                    <p>Git es un sistema de control de versiones distribuido, lo que significa que un clon local del proyecto es un 
+                    repositorio de control de versiones completo. Estos repositorios locales plenamente funcionales permiten trabajar 
+                    sin conexión o de forma remota con facilidad.</p>
+                </div>
+            </div>
+    </section>
+    <hr id="ent">
+
+    <!-- ************************************** SECCION PROYECTOS **************************************  -->
+    
+    <section class="proyectos" id="proyectos">
+        <div class="cont-titulo">
+            <h2 class="titulos">Proyectos</h2>
+        </div>
+        <div class="parrafos pry">
+            <p>Recopilación de pequeños, medianos y grandes proyectos que e elaborado.</p>
+        </div>
+        <div class="contenedor-pry">
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="800">
+                <div class="carta-pry">
+                    <a href="https://danieldct.github.io/world-fitness/" target="_blank">
+                        <img src="img/proyectos/proyectot7.jpg" alt="img-world-fitness" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">WORLD FITNESS</h3>
+                        <span class="leng">HTML / CSS</span>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="1100">
+                <div class="carta-pry">
+                    <a href="https://danieldct.github.io/tributo-chester-bennington/" target="_blank">
+                        <img src="img/proyectos/proyectot5.jpg" alt="-img-tributo-chester-bennington" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">TRIBUTO CHESTER BENNINGTON</h3>
+                        <span class="leng">HTML / CSS / JAVASCRIPT</span>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="1100">
+                <div class="carta-pry">
+                    <a href="https://danieldct.github.io/login/" target="_blank">
+                        <img src="img/proyectos/proyectot6.jpg" alt="img-login-y-signup" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">LOGIN & SIGNUP</h3>
+                        <span class="leng">HTML / CSS</span>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="800">
+                <div class="carta-pry">
+                    <a href="https://danieldct.github.io/primer-portafolio/" target="_blank">
+                        <img src="img/proyectos/primer-portafolio.jpg" alt="img-primer-portafolio" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">PRIMER PORTAFOLIO</h3>
+                        <span class="leng">HTML / CSS / JAVASCRIPT</span>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="800">
+                <div class="carta-pry">
+                    <a href="https://iniciosesionone.000webhostapp.com/login.php" target="_blank">
+                        <img src="img/proyectos/proyectot3.jpg" alt="img-login-php" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">LOGIN PHP</h3>
+                        <span class="leng">HTML / CSS / PHP / MYSQL</span>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="1100">
+                <div class="carta-pry">
+                    <a href="https://danieldct.github.io/relojdigital/" target="_blank">
+                        <img src="img/proyectos/proyectot4.jpg" alt="img-reloj-digital" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">RELOJ DIGITAL</h3>
+                        <span class="leng">HTML / CSS / JAVASCRIPT</span>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="1100">
+                <div class="carta-pry">
+                    <a href="https://danieldct.github.io/perimes/" target="_blank">
+                        <img src="img/proyectos/proyectot1.jpg" alt="img-perimes" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">PERIMES</h3>
+                        <span class="leng">HTML / CSS / JAVASCRIPT</span>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="cont-carta-pry" data-aos="fade-up" data-aos-duration="800">
+                <div class="carta-pry">
+                    <a href="https://danieldct.github.io/Calculadora-JS/" target="_blank">
+                        <img src="img/proyectos/proyectot2.jpg" alt="img-calculadora-js" class="img-pry">
+                    <div class="contenido-proyecto">
+                        <h3 class="nombre-pry">CALCULADORA</h3>
+                        <span class="leng">HTML / CSS / JAVASCRIPT</span>
+                    </div></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <hr id="ent">
+
+    <!-- ************************************** SECCION CONTACTO **************************************  -->
+
+    <section class="contacto" id="contacto">
+        <form action="https://formsubmit.co/01b7a798d07b7133dd4889eb4bc99e2b" method="POST"><input type="hidden" name="_captcha" value="false">
+            <div class="contenedor">
+                <div class="cont-titulo">
+                    <h2 class="titulos">Contactame</h2>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="caja-input">
+                            <input type="text" name="nombre" required="required">
+                            <span class="texto">Nombre</span>
+                            <span class="linea"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caja-input">
+                            <input type="text" name="apellido" required="required">
+                            <span class="texto">Apellido</span>
+                            <span class="linea"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="caja-input">
+                            <input type="text" name="correo" required="required">
+                            <span class="texto">Correo</span>
+                            <span class="linea"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caja-input">
+                            <input type="text" name="telefono" required="required">
+                            <span class="texto">Telefono</span>
+                            <span class="linea"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="caja-input textarea">
+                            <textarea required="required" name="mensaje"></textarea>
+                            <span class="texto">Mensaje</span>
+                            <span class="linea"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <input type="submit" class="btncontacto" value="Enviar">
+                    </div>
+                </div>        
+            </div>
+        </form>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2023 Daniel David Calderón Tinjaca. Todos los derechos reservados</p>
+    </div>
+
+        <!--  SCRIPT CAJA MODAL - LENGUAJES  -->
+        <script src="js/modal.js"></script>
+        
+        <!--  SCRIPT ANIMACIÓN DE CONTENEDORES AL HACER SCROLL  -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                offset: 75,
+                once: false
+            });
+        </script>
+
+        <!--  SCRIPT BARRA DE NAVEGACIÓN  -->
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector(`header`);
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var menu = document.querySelector('.menu');
+                menuToggle.classList.toggle('active');
+                menu.classList.toggle('active');
+            }
+        </script>
+</body>
