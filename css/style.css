@@ -123,7 +123,7 @@ ul li a:hover::before {
     height: 100%;
     overflow: hidden;
     }
-    
+
 .circles li {
     position: absolute;
     display: block;
@@ -134,7 +134,7 @@ ul li a:hover::before {
     animation: animate 25s linear infinite;
     bottom: -150px;
     }
-    
+
 .circles li:nth-child(1){
     left: 25%;
     width: 80px;
@@ -149,14 +149,14 @@ ul li a:hover::before {
     animation-delay: 2s;
     animation-duration: 12s;
     }
-    
+
 .circles li:nth-child(3){
     left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
     }
-    
+
 .circles li:nth-child(4){
     left: 40%;
     width: 60px;
@@ -164,28 +164,28 @@ ul li a:hover::before {
     animation-delay: 0s;
     animation-duration: 18s;
     }
-    
+
 .circles li:nth-child(5){
     left: 65%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
     }
-    
+
 .circles li:nth-child(6){
     left: 75%;
     width: 110px;
     height: 110px;
     animation-delay: 3s;
     }
-    
+
 .circles li:nth-child(7){
     left: 35%;
     width: 150px;
     height: 150px;
     animation-delay: 7s;
     }
-    
+
 .circles li:nth-child(8){
     left: 50%;
     width: 25px;
@@ -193,7 +193,7 @@ ul li a:hover::before {
     animation-delay: 15s;
     animation-duration: 45s;
     }
-    
+
 .circles li:nth-child(9){
     left: 20%;
     width: 15px;
@@ -201,7 +201,7 @@ ul li a:hover::before {
     animation-delay: 2s;
     animation-duration: 35s;
     }
-    
+
 .circles li:nth-child(10){
     left: 85%;
     width: 150px;
@@ -327,8 +327,6 @@ button:hover {
     color: rgb(0, 0, 0);
     }
 
-/* ******************** FIN SECCION 1 - SECCION BANNER ******************** */
-
 /* ******************** SECCION 2 - SECCION SOBRE MI ******************** */
 
 .sec-sobremi {
@@ -352,65 +350,38 @@ button:hover {
     border-bottom: 4px solid rgb(15, 178, 237);
     }
 
-.contenedor-sbm {
-    width: 100%;
-    height: max-content;
-    padding: 0 0 50px 0;
+.content {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    }
+
+.img-about {
+    min-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.img-about img {
     justify-content: center;
     align-items: center;
-    grid-gap: 20px;
-    }
-
-.cont-carta-sbm {
-    background-color: #12202f;
-    width: 90%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid aliceblue;
-    border-radius: 4px;
-    }
-
-.carta-sbm {
+    object-fit: cover;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
+    filter: grayscale(45%);
     }
 
-.carta-sbm .foto {
-    width: 20%;
-    height: 100%;
-    object-fit: fill;
-    opacity: 0.7;
-    float: left;
+.info-about {
+    min-width: 70%;
     }
 
-.contenido-sobremi {
-    padding: 5px;
-    display: inline-block;
-    text-align: center;
-    width: 80%;
-    height: 100%;
-    padding: 50px 25px;
-    }
-
-.nombre-sbm {
+.info-about p {
+    font-size: 20px;
     color: aliceblue;
-    font-size: 25px;
-    }
-
-.prof {
-    color: rgb(15, 178, 237);
-    font-size: 18px;
-    font-weight: 500;
-    }
-
-.carta-sbm p {
-    text-align: left;
-    padding: 20px;
-    color: aliceblue;
-    line-height: 30px;
+    padding: 0 0 0 20px;
+    line-height: 1.8;
     }
 
 p mark {
@@ -423,6 +394,7 @@ p mark {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     }
 
 .wrapper .icon{
@@ -433,7 +405,7 @@ p mark {
     align-items: center;
     justify-content: center;
     }
-    
+
 a {
     color: rgb(26, 146, 189);
     text-decoration: none;
@@ -489,8 +461,6 @@ a {
     background: #333;
     }
     
-
-/* ******************** FIN SECCION 2 - SECCION SOBRE MI ******************** */
 
 /* ******************** SECCION 3 - SECCION LENGUAJES ******************** */
 
@@ -656,10 +626,7 @@ a {
     cursor: pointer;
     }
 
-
-/* ******************** FIN SECCION 2 - SECCION LENGUAJES ******************** */
-
-/* ******************** SECCION 3 - SECCION PROYECTOS ******************** */
+/* ******************** SECCION 4 - SECCION PROYECTOS ******************** */
 
 .proyectos {
     width: 100%;
@@ -734,9 +701,7 @@ a {
     font-weight: 500;
     }
 
-/* ******************** FIN SECCION 3 - SECCION PROYECTOS ******************** */
-
-/* ******************** SECCION 4 - SECCION CONTACTO ******************** */
+/* ******************** SECCION 5 - SECCION CONTACTO ******************** */
 
 .contacto {
     width: 100%;
@@ -885,38 +850,13 @@ form {
     padding: 10px;
     }
 
-/* ******************** FIN SECCION 4 - SECCION CONTACTO ******************** */
-
-@media (max-width: 1155px){
-
-/* ******************** SECCION 2 - SECCION SOBRE MI ******************** */
-
-    .cont-carta-sbm {
-        width: 95%;
-        height: 420px;
-        }
-
-    .carta-sbm .foto {
-        width: 30%;
-        height: 100%;
-        }
-
-    .contenido-sobremi {
-        text-align: center;
-        width: 70%;
-        padding: 30px 15px;
-        }
-
-/* ******************** FIN SECCION 2 - SECCION SOBRE MI ******************** */
-}
-
 @media (max-width: 991px) {
     header,
     header.sticky {
         padding: 20px 25px;
         z-index: 1000;
         }
-        
+
     .menu {
         position: fixed;
         top: 75px;
@@ -941,7 +881,7 @@ form {
     .menu.active {
         left: 0;
         }
-        
+
     header ul li a {
         color: aliceblue;
         font-size: 24px;
@@ -966,126 +906,20 @@ form {
         cursor: pointer;
         }
 
-/* ******************** SECCION 2 - SECCION SOBRE MI ******************** */
-
-    .cont-carta-sbm {
-        background-color: #12202f;
-        width: 100%;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        border: 1px solid aliceblue;
-        border-radius: 4px;
+    .content {
+        display: block;
+        margin-top: 20px;
         }
 
-    .carta-sbm .foto {
-        width: 35%;
-        height: 100%;
+    .info-about {
+        min-width: 100%;
         }
 
-    .contenido-sobremi {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+    .info-about p {
         text-align: center;
-        width: 65%;
-        padding: 30px 15px;
-        }
-
-    .nombre-sbm {
-        color: aliceblue;
-        font-size: 18px;
-        }
-
-    .prof {
-        font-size: 14px;
-        }
-
-    .carta-sbm p {
-        text-align: justify;
-        padding: 10px;
-        font-size: 14px;
-        }
-
-/* ******************** FIN SECCION 2 - SECCION SOBRE MI ******************** */
-
-}
-
-@media (max-width: 750px){
-
-/* ******************** SECCION 2 - SECCION SOBRE MI ******************** */
-
-        
-    .cont-titulo {
-        height: 80px;    
-        }
-
-    .cont-titulo .titulos {
         font-size: 20px;
-        letter-spacing: 1px;
+        padding: 30px 0 10px 0;
         }
-
-    .cont-carta-sbm {
-        background-color: #12202f;
-        width: 320px;
-        height: max-content;
-        }
-
-    .carta-sbm {
-        width: 100%;
-        height: 100%;
-        }
-
-    .carta-sbm .foto {
-        width: 100%;
-        height: 390px;
-        }
-
-    .contenido-sobremi {
-        padding: 5px;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        padding: 30px 15px;
-        }
-
-    .nombre-sbm {
-        color: aliceblue;
-        font-size: 18px;
-        }
-
-    .prof {
-        font-size: 14px;
-        }
-
-    .carta-sbm p {
-        text-align: justify;
-        padding: 10px;
-        font-size: 14px;
-        }
-
-    /* Botones Redes Sociales */
-
-    .wrapper{
-        padding-top: 15px;
-        }
-    .wrapper .icon{
-        margin: 0 8px;
-        }
-
-    .wrapper .icon span{
-        height: 45px;
-        width: 45px;
-        }
-
-    .wrapper .icon span i{
-        line-height: 45px;
-        font-size: 25px;
-        }
-
-/* ******************** FIN SECCION 2 - SECCION SOBRE MI ******************** */
-
 }
 
 @media (max-width: 600px){
@@ -1101,48 +935,48 @@ form {
         height: 30px;
         animation-delay: 2s;
         }
-    
+
     .circles li:nth-child(2){
         left: 0%;
         width: 90px;
         height: 90px;
         }
-        
+
     .circles li:nth-child(3){
         width: 20px;
         height: 20px;
         }
-        
+
     .circles li:nth-child(4){
         width: 60px;
         height: 60px;
         }
-        
+
     .circles li:nth-child(5){
         width: 40px;
         height: 40px;
         }
-        
+
     .circles li:nth-child(6){
         width: 80px;
         height: 80px;
         }
-        
+
     .circles li:nth-child(7){
         width: 95px;
         height: 95px;
         }
-        
+
     .circles li:nth-child(8){
         width: 25px;
         height: 25px;
         }
-        
+
     .circles li:nth-child(9){
         width: 35px;
         height: 35px;
         }
-        
+
     .circles li:nth-child(10){
         width: 90px;
         height: 90px;
@@ -1151,17 +985,17 @@ form {
     .contenido-bn {
         height: 200px;
         }
-    
+
     .sec-banner .titulo {
         font-size: 30px;
         letter-spacing: 2px;
         }
-    
+
     .sec-banner .titulo::before {
         left: 30%;
         width: 40%;
         }
-    
+
     .sec-banner .nombre {
         font-size: 10px;
         text-align: center;
@@ -1170,7 +1004,7 @@ form {
     .sec-banner .profesion {
         font-size: 15px;
         }
-    
+
     button {
         height: 35px;
         width: 150px;
@@ -1179,68 +1013,26 @@ form {
         font-weight: 600;
         text-decoration: none;
         }
-    
+
     .btn-banner {
         width: 150px;
         margin: 10px 0;
         }
-    
-/* ******************** FIN SECCION 1 - SECCION BANNER ******************** */
 
 /* ******************** SECCION 2 - SECCION SOBRE MI ******************** */
 
-    
-    .cont-titulo {
-        height: 80px;    
-        }
-
-    .cont-titulo .titulos {
-        font-size: 20px;
-        letter-spacing: 1px;
-        }
-
-    .cont-carta-sbm {
-        background-color: #12202f;
-        width: 280px;
-        height: max-content;
-        }
-
-    .carta-sbm {
-        width: 100%;
-        height: 100%;
-        }
-
-    .carta-sbm .foto {
-        width: 100%;
-        height: 360px;
-        }
-
-    .contenido-sobremi {
-        padding: 5px;
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        padding: 30px 15px;
-        }
-
-    .nombre-sbm {
-        color: aliceblue;
-        font-size: 18px;
-        }
-
-    .prof {
-        font-size: 14px;
-        }
-
-    .carta-sbm p {
+    .info-about p {
+        font-size: 16px;
         text-align: justify;
-        padding: 10px;
-        font-size: 14px;
+        word-spacing: 0px;
+        padding: 20px 0 10px 0;
+        line-height: 1.6;
         }
 
 /* Botones Redes Sociales */
 
     .wrapper{
+        margin-top: 0;
         padding-top: 15px;
         }
     .wrapper .icon{
@@ -1257,9 +1049,8 @@ form {
         font-size: 25px;
         }
 
-/* ******************** FIN SECCION 2 - SECCION SOBRE MI ******************** */
-
 /* ******************** SECCION 3 - SECCION LENGUAJES ******************** */
+
     section ~ .lenguajes {
         padding: 75px 0;
         }
@@ -1300,9 +1091,7 @@ form {
         font-size: 15px;
         }
 
-/* ******************** FIN SECCION 2 - SECCION LENGUAJES ******************** */
-
-/* ******************** SECCION 3 - SECCION PROYECTOS ******************** */
+/* ******************** SECCION 4 - SECCION PROYECTOS ******************** */
 
     .contenedor-pry {
         width: 100%;
@@ -1321,7 +1110,7 @@ form {
 
     .carta-pry .img-pry {
         width: 40%;
-        height: 97px;
+        height: 96px;
         object-fit: cover;
         opacity: 0.7;
         float: left;
@@ -1345,9 +1134,7 @@ form {
         font-size: 10px;
         }
 
-/* ******************** FIN SECCION 3 - SECCION PROYECTOS ******************** */
-
-/* ******************** SECCION 4 - SECCION CONTACTO ******************** */
+/* ******************** SECCION 5 - SECCION CONTACTO ******************** */
 
     .contenedor {
         width: 100%;
@@ -1357,16 +1144,16 @@ form {
     .contenedor .row100 {
         width: 100%;
         }
-    
+
     .contenedor .row100 .col {
         width: 100%;
         padding: 0 20px;
         }
-    
+
     .contenedor .row100 .caja-input {
         width: 95%;
         }
-            
+
     .contenedor .row100 .caja-input input,
     .contenedor .row100 .caja-input.textarea textarea {
         width: 95%;
@@ -1385,8 +1172,6 @@ form {
         width: 96%;
         font-size: 14px;
         }
-
-/* ******************** FIN SECCION 4 - SECCION CONTACTO ******************** */
 
     .copyright {
         font-size: 11px;
@@ -1447,50 +1232,17 @@ form {
         margin: 10px 0;
         }
 
-/* ******************** FIN SECCION 1 - SECCION BANNER ******************** */
-
-
-
 /* ******************** SECCION 2 - SECCION SOBRE MI ******************** */
 
-    .cont-carta-sbm {
-        background-color: #12202f;
-        width: 100%;
-        height: 420px;
-        display: flex;
-        justify-content: center;
-        border: 1px solid aliceblue;
-        border-radius: 4px;
-        }
-
-    .carta-sbm .foto {
-        width: 35%;
-        height: 100%;
-        }
-
-    .contenido-sobremi {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        width: 65%;
-        padding: 30px 15px;
-        }
-
-    .nombre-sbm {
-        color: aliceblue;
-        font-size: 18px;
-        }
-
-    .prof {
-        font-size: 14px;
-        }
-
-    .carta-sbm p {
+    .info-about p {
+        font-size: 13px;
         text-align: justify;
-        padding: 10px;
-        font-size: 14px;
+        }
+
+    .img-about img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
         }
 
     /* Botones Redes Sociales */
@@ -1498,6 +1250,7 @@ form {
     .wrapper{
         padding-top: 5px;
         }
+
     .wrapper .icon{
         margin: 0 8px;
         }
@@ -1511,8 +1264,6 @@ form {
         line-height: 45px;
         font-size: 25px;
         }
-
-/* ******************** FIN SECCION 2 - SECCION SOBRE MI ******************** */
 
 /* ******************** SECCION 3 - SECCION LENGUAJES ******************** */
 
@@ -1544,9 +1295,7 @@ form {
         font-size: 14px;
         }
 
-/* ******************** FIN SECCION 2 - SECCION LENGUAJES ******************** */
-
-/* ******************** SECCION 3 - SECCION PROYECTOS ******************** */
+/* ******************** SECCION 4 - SECCION PROYECTOS ******************** */
 
     .contenedor-pry {
         width: 100%;
@@ -1589,9 +1338,7 @@ form {
         font-size: 10px;
         }
 
-/* ******************** FIN SECCION 3 - SECCION PROYECTOS ******************** */
-
-/* ******************** SECCION 4 - SECCION CONTACTO ******************** */
+/* ******************** SECCION 5 - SECCION CONTACTO ******************** */
 
     .contenedor {
         width: 100%;
@@ -1629,8 +1376,6 @@ form {
         width: 100%;
         font-size: 14px;
         }
-
-/* ******************** FIN SECCION 4 - SECCION CONTACTO ******************** */
 
     .copyright {
         font-size: 11px;
