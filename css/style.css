@@ -582,13 +582,18 @@ a {
     padding: 30px;
     border: 1px solid #888;
     width: 80%;
-    animation-name: animarsuperior;
+    animation-name: zoom;
     animation-duration: 0.5s
     }
 
-@keyframes animarsuperior {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+    }
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
     }
 
 .contenido-modal P {
@@ -596,10 +601,7 @@ a {
     }
 
 /* Boton para cerrar modal */
-.close1, .close2,
-.close3, .close4,
-.close5, .close6,
-.close7 {
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -607,20 +609,13 @@ a {
     padding-right: 10px;
     }
 
-
-.close1:hover, .close2:hover,
-.close3:hover, .close4:hover,
-.close5:hover, .close6:hover,
-.close7:hover {
+.close:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
     }
 
-.close1:focus, .close2:focus,
-.close3:focus, .close4:focus,
-.close5:focus, .close6:focus,
-.close7:focus {
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
