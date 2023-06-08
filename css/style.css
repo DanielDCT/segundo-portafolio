@@ -494,6 +494,10 @@ a {
     transition: 0.3s;
     }
 
+.lenguajes .contenido-lng .angular:hover {
+    border: 2px solid rgb(210, 30, 30);
+    }
+
 .lenguajes .contenido-lng .html:hover {
     border: 2px solid rgb(210, 105, 30);
     }
@@ -506,16 +510,16 @@ a {
     border: 2px solid rgb(212, 177, 38);
     }
 
+.lenguajes .contenido-lng .git:hover {
+    border: 2px solid rgb(33, 33, 33);
+    }
+
 .lenguajes .contenido-lng .php:hover {
     border: 2px solid rgb(97,124,191);
     }
 
 .lenguajes .contenido-lng .mysql:hover {
     border: 2px solid rgb(157, 169, 174);
-    }
-
-.lenguajes .contenido-lng .git:hover {
-    border: 2px solid rgb(33, 33, 33);
     }
     
 .lenguajes .contenido-lng .bootstrap:hover {
